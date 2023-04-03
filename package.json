@@ -23,11 +23,6 @@
   "peerDependencies": {
     "react": ">=16"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
   "name": "ui-ecosystem-life",
   "author": "8 Hokage",
   "module": "dist/ui-ecosystem-life.esm.js",
