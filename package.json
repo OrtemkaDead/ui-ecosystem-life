@@ -18,7 +18,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "prettier-watch": "onchange 'src/**/*' -- prettier --write {{changed}}",
-    "eslint-watch": "onchange 'src/**/* --ext .ts,.tsx' -- eslint --fix {{changed}}"
+    "eslint-watch": "onchange 'src/**/* --ext .ts,.tsx' -- eslint --fix {{changed}}",
+    "lint": "eslint src/**/* --ext .ts,.tsx --fix"
   },
   "peerDependencies": {
     "react": ">=16"
