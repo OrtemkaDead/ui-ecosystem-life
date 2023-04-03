@@ -1,7 +1,15 @@
-import React from 'react';
+import React from 'react'
 
-import './styles.sass';
+import './styles.sass'
+import classnames from 'classnames'
 
-export const Button = () => {
-  return <button className="button">Button</button>;
-};
+export interface ButtonProps {
+  className?: string
+  children?: React.ReactNode
+}
+
+export const Button = ({ className = '', children = 'Button' }: ButtonProps) => {
+  const ButtonClass = classnames('button', className)
+
+  return <button className={ButtonClass}>{children}</button>
+}
