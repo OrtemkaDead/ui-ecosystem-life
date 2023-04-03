@@ -8,8 +8,10 @@ export interface ButtonProps {
   children?: React.ReactNode
 }
 
-export const Button = ({ className = '', children = 'Button' }: ButtonProps) => {
+const Button = ({ className = '', children = 'Button' }: ButtonProps) => {
   const ButtonClass = classnames('button', className)
 
   return <button className={ButtonClass}>{children}</button>
 }
+
+export default Button

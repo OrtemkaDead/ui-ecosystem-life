@@ -11,7 +11,7 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch, prettier-watch, eslint-watch",
+    "start": "tsdx watch prettier-watch eslint-watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "prepare": "tsdx build",
